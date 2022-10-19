@@ -15,13 +15,14 @@
   <body>
     <header class="header">
 
-      <div class="header__head">
-        <audio class="audio" src="">
-          Your browser does not support the audio element.
-        </audio>
-        <input class="track" type="range" min="0" step="1">
-      </div>
+      <audio class="audio">
+        Your browser does not support the audio element.
+      </audio>
 
+      <div class="track">
+        <span class="track__filler"></span>
+      </div>
+        
       <div class="header__body">
         <div class="controls">
           <svg class="controls__preview" xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-vinyl" viewBox="0 0 16 16">
@@ -57,7 +58,7 @@
           </ul>
         </div>
 
-        <a class="logo" href="#">
+        <a class="logo link" href="search.html">
           <img class="logo__img" src="img/logo.png" alt="Логотип">
         </a>
 
@@ -68,35 +69,36 @@
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
               </svg>
             </button></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Home</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Live</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Music</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Charts</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Events</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Features</a></li>
-          </ul>
-          
-          <a class="navigation__user-link" href="#">
-            <svg class="navigation__user-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-            </svg>
-          </a>
+            <li class="navigation__item"><a class="link navigation__link" href="#">Home</a></li>
+            <li class="navigation__item"><a class="link navigation__link" href="#">Live</a></li>
+            <li class="navigation__item"><a class="link navigation__link" href="#">Music</a></li>
+            <li class="navigation__item"><a class="link navigation__link" href="#">Charts</a></li>
+            <li class="navigation__item"><a class="link navigation__link" href="#">Events</a></li>
+            <li class="navigation__item"><a class="link navigation__link" href="#">Features</a></li>        
+            <li class="navigation__item"><a class="link navigation__user-link" href="#">
+              <svg class="navigation__user-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg>
+            </a></li>
+        </ul>
         </nav>
+        
         <div class="header__burger">
           <span class="header__burger-center"></span>
         </div>    
       </div>
     </header>
+
     <main class="main">
       <div class="wrapper">
         <div class="main__head">        
           <h1 class="main__title main__head-title">Search results for "never gonna give you up"</h1>
           <ul class="main__nav">
-            <li class="main__nav-item"><a class="main__nav-link main__nav-link_active" href="#">Top Results</a></li>
-            <li class="main__nav-item"><a class="main__nav-link" href="#">Artists</a></li>
-            <li class="main__nav-item"><a class="main__nav-link" href="#">Albums</a></li>
-            <li class="main__nav-item"><a class="main__nav-link" href="#">Tracks</a></li>
+            <li class="main__nav-item"><a class="link main__nav-link main__nav-link_active" href="#">Top Results</a></li>
+            <li class="main__nav-item"><a class="link main__nav-link" href="#">Artists</a></li>
+            <li class="main__nav-item"><a class="link main__nav-link" href="#">Albums</a></li>
+            <li class="main__nav-item"><a class="link main__nav-link" href="#">Tracks</a></li>
           </ul>       
         </div>
       </div>    
@@ -156,6 +158,7 @@
               </div>
               <a class="link-more" href="#">More artists ></a>
             </section>
+
             <section class="section">
               <h2 class="section__title-left"></h2>
               <div class="section__body">
@@ -194,6 +197,7 @@
               </div>
               <a class="link-more" href="#">More albums ></a>
             </section>
+
             <section class="section">
               <h2 class="section__title-left">Tracks</h2>
               <ul class="list-track">
@@ -207,9 +211,9 @@
                     <a class="list-track__img" href="#"><svg class="svg-track-img list-track__like" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"  fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                       <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                     </svg></a>
-                   <h3 class="list-track__music-name"> <a href="#">Never Gonna Give You Up</a></h3>
+                   <h3 class="list-track__music-name"> <a class="link" href="#">Never Gonna Give You Up</a></h3>
                   </div>
-                  <span class="list-track__author">Rick Astley</span>
+                  <span class="list-track__author"><a class="link" href="#">Rick Astley</a></span>
                   <time class="list-track__time">3:39</time>
                 </li>
                 <li class="list-track__item">
@@ -222,9 +226,9 @@
                     <a class="list-track__img" href="#"><svg class="svg-track-img list-track__like" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"  fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                       <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                     </svg></a>
-                   <h3 class="list-track__music-name"> <a href="#">Never Gonna Give You Up</a></h3>
+                   <h3 class="list-track__music-name"> <a class="link" href="#">Never Gonna Give You Up</a></h3>
                   </div>
-                  <span class="list-track__author">Rick Astley</span>
+                  <span class="list-track__author"><a class="link" href="#">Rick Astley</a></span>
                   <time class="list-track__time">3:39</time>
                 </li>
                 <li class="list-track__item">
@@ -237,120 +241,16 @@
                     <a class="list-track__img" href="#"><svg class="svg-track-img list-track__like" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"  fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                       <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                     </svg></a>
-                   <h3 class="list-track__music-name"> <a href="#">Never Gonna Give You Up</a></h3>
+                   <h3 class="list-track__music-name"> <a class="link" href="#">Never Gonna Give You Up</a></h3>
                   </div>
-                  <span class="list-track__author">Rick Astley</span>
-                  <time class="list-track__time">3:39</time>
-                </li>
-                <li class="list-track__item">
-                  <div class="list-track__content">
-                    <a class="list-track__img" href="#"><svg class="svg-track-img" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
-                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                      <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
-                    </svg></a>
-                    <img class="list-track__img" src="img/note.png" alt="Preview">
-                    <a class="list-track__img" href="#"><svg class="svg-track-img list-track__like" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"  fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                    </svg></a>
-                   <h3 class="list-track__music-name"> <a href="#">Never Gonna Give You Up</a></h3>
-                  </div>
-                  <span class="list-track__author">Rick Astley</span>
-                  <time class="list-track__time">3:39</time>
-                </li>
-                <li class="list-track__item">
-                  <div class="list-track__content">
-                    <a class="list-track__img" href="#"><svg class="svg-track-img" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
-                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                      <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
-                    </svg></a>
-                    <img class="list-track__img" src="img/note.png" alt="Preview">
-                    <a class="list-track__img" href="#"><svg class="svg-track-img list-track__like" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"  fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                    </svg></a>
-                   <h3 class="list-track__music-name"> <a href="#">Never Gonna Give You Up</a></h3>
-                  </div>
-                  <span class="list-track__author">Rick Astley</span>
-                  <time class="list-track__time">3:39</time>
-                </li>
-                <li class="list-track__item">
-                  <div class="list-track__content">
-                    <a class="list-track__img" href="#"><svg class="svg-track-img" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
-                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                      <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
-                    </svg></a>
-                    <img class="list-track__img" src="img/note.png" alt="Preview">
-                    <a class="list-track__img" href="#"><svg class="svg-track-img list-track__like" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"  fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                    </svg></a>
-                   <h3 class="list-track__music-name"> <a href="#">Never Gonna Give You Up</a></h3>
-                  </div>
-                  <span class="list-track__author">Rick Astley</span>
-                  <time class="list-track__time">3:39</time>
-                </li>
-                <li class="list-track__item">
-                  <div class="list-track__content">
-                    <a class="list-track__img" href="#"><svg class="svg-track-img" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
-                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                      <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
-                    </svg></a>
-                    <img class="list-track__img" src="img/note.png" alt="Preview">
-                    <a class="list-track__img" href="#"><svg class="svg-track-img list-track__like" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"  fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                    </svg></a>
-                   <h3 class="list-track__music-name"> <a href="#">Never Gonna Give You Up</a></h3>
-                  </div>
-                  <span class="list-track__author">Rick Astley</span>
-                  <time class="list-track__time">3:39</time>
-                </li>
-                <li class="list-track__item">
-                  <div class="list-track__content">
-                    <a class="list-track__img" href="#"><svg class="svg-track-img" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
-                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                      <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
-                    </svg></a>
-                    <img class="list-track__img" src="img/note.png" alt="Preview">
-                    <a class="list-track__img" href="#"><svg class="svg-track-img list-track__like" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"  fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                    </svg></a>
-                   <h3 class="list-track__music-name"> <a href="#">Never Gonna Give You Up</a></h3>
-                  </div>
-                  <span class="list-track__author">Rick Astley</span>
-                  <time class="list-track__time">3:39</time>
-                </li>
-                <li class="list-track__item">
-                  <div class="list-track__content">
-                    <a class="list-track__img" href="#"><svg class="svg-track-img" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
-                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                      <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
-                    </svg></a>
-                    <img class="list-track__img" src="img/note.png" alt="Preview">
-                    <a class="list-track__img" href="#"><svg class="svg-track-img list-track__like" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"  fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                    </svg></a>
-                   <h3 class="list-track__music-name"> <a href="#">Never Gonna Give You Up</a></h3>
-                  </div>
-                  <span class="list-track__author">Rick Astley</span>
-                  <time class="list-track__time">3:39</time>
-                </li>
-                <li class="list-track__item">
-                  <div class="list-track__content">
-                    <a class="list-track__img" href="#"><svg class="svg-track-img" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
-                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                      <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
-                    </svg></a>
-                    <img class="list-track__img" src="img/note.png" alt="Preview">
-                    <a class="list-track__img" href="#"><svg class="svg-track-img list-track__like" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"  fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                    </svg></a>
-                   <h3 class="list-track__music-name"> <a href="#">Never Gonna Give You Up</a></h3>
-                  </div>
-                  <span class="list-track__author">Rick Astley</span>
+                  <span class="list-track__author"><a class="link" href="#">Rick Astley</a></span>
                   <time class="list-track__time">3:39</time>
                 </li>
               </ul>
               <a class="link-more" href="#">More tracks ></a>
             </section>           
-          </div>       
+          </div>
+              
           <aside class="accordion">         
             <p class="accordion__text">
               Don`t want to see ads? <a class="accordion__link" href="#">Upgrade Now</a>
@@ -359,35 +259,36 @@
         </div>            
       </div>   
     </main>
+
     <footer class="footer">
       <div class="wrapper">
         <section class="footer__head">       
           <div class="footer__column">
             <h4 class="footer__column-title">Company</h4>
-            <a class="footer__column-link" href="#">About Last.fm</a>
-            <a class="footer__column-link" href="#">Contact Us</a>
-            <a class="footer__column-link" href="#">Jobs</a>
+            <a class="link footer__column-link" href="#">About Last.fm</a>
+            <a class="link footer__column-link" href="#">Contact Us</a>
+            <a class="link footer__column-link" href="#">Jobs</a>
           </div>
           <div class="footer__column">
             <h4 class="footer__column-title">Help</h4>
-            <a class="footer__column-link" href="#">Track My Music</a>
-            <a class="footer__column-link" href="#">Community Support</a>
-            <a class="footer__column-link" href="#">Community Guidelines</a>
-            <a class="footer__column-link" href="#">Help</a>
+            <a class="link footer__column-link" href="#">Track My Music</a>
+            <a class="link footer__column-link" href="#">Community Support</a>
+            <a class="link footer__column-link" href="#">Community Guidelines</a>
+            <a class="link footer__column-link" href="#">Help</a>
           </div>
           <div class="footer__column">
             <h4 class="footer__column-title">Goodies</h4>
-            <a class="footer__column-link" href="#">Dowland Scrobbler</a>
-            <a class="footer__column-link" href="#">Dowland API</a>
-            <a class="footer__column-link" href="#">Free Music Downloads</a>
-            <a class="footer__column-link" href="#">Merchandise</a>
+            <a class="link footer__column-link" href="#">Dowland Scrobbler</a>
+            <a class="link footer__column-link" href="#">Dowland API</a>
+            <a class="link footer__column-link" href="#">Free Music Downloads</a>
+            <a class="link footer__column-link" href="#">Merchandise</a>
           </div>
           <div class="footer__column">
             <h4 class="footer__column-title">Account</h4>
-            <a class="footer__column-link" href="#">Inbox</a>
-            <a class="footer__column-link" href="#">Settings</a>
-            <a class="footer__column-link" href="#">Last.fm Pro</a>
-            <a class="footer__column-link" href="#">Logout</a>
+            <a class="link footer__column-link" href="#">Inbox</a>
+            <a class="link footer__column-link" href="#">Settings</a>
+            <a class="link footer__column-link" href="#">Last.fm Pro</a>
+            <a class="link footer__column-link" href="#">Logout</a>
           </div>
         </section>
       </div>
@@ -397,31 +298,31 @@
           <div class="footer__body-content">
             <div class="footer__body-links">
               <ul class="footer__list">
-                <li><a class="footer__list-link footer__list-link_active" href="#">English</a></li>
-                <li><a class="footer__list-link" href="#">Deutsch</a></li>
-                <li><a class="footer__list-link" href="#">Español</a></li>
-                <li><a class="footer__list-link" href="#">Français</a></li>
-                <li><a class="footer__list-link" href="#">Italiano</a></li>
-                <li><a class="footer__list-link" href="#">日本語</a></li>
-                <li><a class="footer__list-link" href="#">Polski</a></li>
-                <li><a class="footer__list-link" href="#">Português</a></li>
-                <li><a class="footer__list-link" href="#">Русский</a></li>
-                <li><a class="footer__list-link" href="#">Svenska</a></li>
-                <li><a class="footer__list-link" href="#">Türkçe</a></li>
-                <li></li><a class="footer__list-link" href="#">简体中文</a></li>
+                <li class="footer__list-item"><a class="link footer__list-link footer__list-link_active" href="#">English</a></li>
+                <li class="footer__list-item"><a class="link footer__list-link" href="#">Deutsch</a></li>
+                <li class="footer__list-item"><a class="link footer__list-link" href="#">Español</a></li>
+                <li class="footer__list-item"><a class="link footer__list-link" href="#">Français</a></li>
+                <li class="footer__list-item"><a class="link footer__list-link" href="#">Italiano</a></li>
+                <li class="footer__list-item"><a class="link footer__list-link" href="#">日本語</a></li>
+                <li class="footer__list-item"><a class="link footer__list-link" href="#">Polski</a></li>
+                <li class="footer__list-item"><a class="link footer__list-link" href="#">Português</a></li>
+                <li class="footer__list-item"><a class="link footer__list-link" href="#">Русский</a></li>
+                <li class="footer__list-item"><a class="link footer__list-link" href="#">Svenska</a></li>
+                <li class="footer__list-item"><a class="link footer__list-link" href="#">Türkçe</a></li>
+                <li class="footer__list-item"><a class="link footer__list-link" href="#">简体中文</a></li>
               </ul>
-              <a class="time-zone">
+              <a class="link time-zone">
                 Time zone <span class="time-zone__region">Europe/Moscow</span>
               </a>
               <ul class="footer-legal footer__list">
-                <li><a class="footer__list-link" href="#">CBS Interactive</a> © 2022 Last.fm Ltd. All rights reserved</li>
-                <li><a class="footer__list-link" href="#">Terms of Use</a></li>
-                <li><a class="footer__list-link" href="#">Privacy Policy</a></li>
-                <li><a class="footer__list-link" href="#">Legal Policies</a></li>
-                <li><a class="footer__list-link" href="#">Cookies Policy</a></li>
-                <li><a class="footer__list-link" href="#">Cookie Information</a></li>
-                <li><a class="footer__list-link" href="#">Jobs at ViacomCBS</a></li>
-                <li><a class="footer__list-link" href="#">Last.fm Music</a></li>
+                <li class="footer__list-item"><a class="link footer__list-link" href="#">CBS Interactive</a> © 2022 Last.fm Ltd. All rights reserved</li>
+                <li class="footer__list-item"><a class="link footer__list-link" href="#">Terms of Use</a></li>
+                <li class="footer__list-item"><a class="link footer__list-link" href="#">Privacy Policy</a></li>
+                <li class="footer__list-item"><a class="link footer__list-link" href="#">Legal Policies</a></li>
+                <li class="footer__list-item"><a class="link footer__list-link" href="#">Cookies Policy</a></li>
+                <li class="footer__list-item"><a class="link footer__list-link" href="#">Cookie Information</a></li>
+                <li class="footer__list-item"><a class="link footer__list-link" href="#">Jobs at ViacomCBS</a></li>
+                <li class="footer__list-item"><a class="link footer__list-link" href="#">Last.fm Music</a></li>
               </ul>
             </div>
             <div class="footer-logo">
