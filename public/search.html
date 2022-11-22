@@ -10,7 +10,8 @@
       content="Web site created using create-react-app"
     />
     <link rel="stylesheet" href="styles.css">
-    <title>Music | Last.fm</title>
+    <script src="search.js" defer></script>
+    <title>Search | Last.fm</title>
   </head>
   <body>
     <header class="header">
@@ -93,7 +94,7 @@
     <main class="main">
       <div class="wrapper">
         <div class="main__head">        
-          <h1 class="main__title main__head-title">Search results for "never gonna give you up"</h1>
+          <h1 class="main__title title-left">Search results for</h1>
           <ul class="main__nav">
             <li class="main__nav-item"><a class="link main__nav-link main__nav-link_active" href="#">Top Results</a></li>
             <li class="main__nav-item"><a class="link main__nav-link" href="#">Artists</a></li>
@@ -106,8 +107,8 @@
         <div class="main__boby-content">
           <div class="main__content">
             <form class="main__form" action="#" method="GET">
-              <input class="main__form-input" type="text" placeholder="never gonna give you up" value="never gonna give you up" tabindex="1">
-              <button class="main__form-button" type="button">
+              <input class="main__form-input" type="text" placeholder="never gonna give you up" value="" tabindex="1">
+              <button id="buttonCancel" class="main__form-button" type="button">
                 <svg class="main__form-button-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
                   <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                   <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
@@ -122,131 +123,19 @@
             </form>
             <section class="section">
               <h2 class="section__title-left">Artists</h2>
-              <div class="section__body">
-                <article class="about-music about-music__star">
-                  <h3 class="about-music__title">Never Gonna Gine You Up</h3>
-                  <span class="about-music__description">1 751 listeners</span>
-                </article>
-                <article class="about-music about-music__star">
-                  <h3 class="about-music__title">Never Gonna Gine You Up</h3>
-                  <span class="about-music__description">1 751 listeners</span>
-                </article>
-                <article class="about-music about-music__star">
-                  <h3 class="about-music__title">Never Gonna Gine You Up</h3>
-                  <span class="about-music__description">1 751 listeners</span>
-                </article>
-                <article class="about-music about-music__star">
-                  <h3 class="about-music__title">Never Gonna Gine You Up</h3>
-                  <span class="about-music__description">1 751 listeners</span>
-                </article>
-                <article class="about-music about-music__star">
-                  <h3 class="about-music__title">Never Gonna Gine You Up</h3>
-                  <span class="about-music__description">1 751 listeners</span>
-                </article>
-                <article class="about-music about-music__star">
-                  <h3 class="about-music__title">Never Gonna Gine You Up</h3>
-                  <span class="about-music__description">1 751 listeners</span>
-                </article>
-                <article class="about-music about-music__star">
-                  <h3 class="about-music__title">Never Gonna Gine You Up</h3>
-                  <span class="about-music__description">1 751 listeners</span>
-                </article>
-                <article class="about-music about-music__star">
-                  <h3 class="about-music__title">Never Gonna Gine You Up</h3>
-                  <span class="about-music__description">1 751 listeners</span>
-                </article>
-              </div>
+              <div class="section__body"></div>
               <a class="link-more" href="#">More artists ></a>
             </section>
 
             <section class="section">
-              <h2 class="section__title-left"></h2>
-              <div class="section__body">
-                <article class="about-music about-music__track">
-                  <h3 class="about-music__title">Never Gonna Gine You Up</h3>
-                  <span class="about-music__description">Mac Beez</span>
-                </article>
-                <article class="about-music about-music__track">
-                  <h3 class="about-music__title">Never Gonna Gine You Up</h3>
-                  <span class="about-music__description">Mac Beez</span>
-                </article>
-                <article class="about-music about-music__track">
-                  <h3 class="about-music__title">Never Gonna Gine You Up</h3>
-                  <span class="about-music__description">Mac Beez</span>
-                </article>
-                <article class="about-music about-music__track">
-                  <h3 class="about-music__title">Never Gonna Gine You Up</h3>
-                  <span class="about-music__description">Mac Beez</span>
-                </article>
-                <article class="about-music about-music__track">
-                  <h3 class="about-music__title">Never Gonna Gine You Up</h3>
-                  <span class="about-music__description">Mac Beez</span>
-                </article>
-                <article class="about-music about-music__track">
-                  <h3 class="about-music__title">Never Gonna Gine You Up</h3>
-                  <span class="about-music__description">Mac Beez</span>
-                </article>
-                <article class="about-music about-music__track">
-                  <h3 class="about-music__title">Never Gonna Gine You Up</h3>
-                  <span class="about-music__description">Mac Beez</span>
-                </article>
-                <article class="about-music about-music__track">
-                  <h3 class="about-music__title">Never Gonna Gine You Up</h3>
-                  <span class="about-music__description">Mac Beez</span>
-                </article>
-              </div>
+              <h2 class="section__title-left">Альбомы</h2>
+              <div class="section__body"></div>
               <a class="link-more" href="#">More albums ></a>
             </section>
 
             <section class="section">
-              <h2 class="section__title-left">Tracks</h2>
-              <ul class="list-track">
-                <li class="list-track__item">
-                  <div class="list-track__content">
-                    <a class="list-track__img" href="#"><svg class="svg-track-img" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
-                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                      <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
-                    </svg></a>
-                    <img class="list-track__img" src="img/note.png" alt="Preview">
-                    <a class="list-track__img" href="#"><svg class="svg-track-img list-track__like" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"  fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                    </svg></a>
-                   <h3 class="list-track__music-name"> <a class="link" href="#">Never Gonna Give You Up</a></h3>
-                  </div>
-                  <span class="list-track__author"><a class="link" href="#">Rick Astley</a></span>
-                  <time class="list-track__time">3:39</time>
-                </li>
-                <li class="list-track__item">
-                  <div class="list-track__content">
-                    <a class="list-track__img" href="#"><svg class="svg-track-img" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
-                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                      <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
-                    </svg></a>
-                    <img class="list-track__img" src="img/note.png" alt="Preview">
-                    <a class="list-track__img" href="#"><svg class="svg-track-img list-track__like" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"  fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                    </svg></a>
-                   <h3 class="list-track__music-name"> <a class="link" href="#">Never Gonna Give You Up</a></h3>
-                  </div>
-                  <span class="list-track__author"><a class="link" href="#">Rick Astley</a></span>
-                  <time class="list-track__time">3:39</time>
-                </li>
-                <li class="list-track__item">
-                  <div class="list-track__content">
-                    <a class="list-track__img" href="#"><svg class="svg-track-img" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
-                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                      <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
-                    </svg></a>
-                    <img class="list-track__img" src="img/note.png" alt="Preview">
-                    <a class="list-track__img" href="#"><svg class="svg-track-img list-track__like" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"  fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                    </svg></a>
-                   <h3 class="list-track__music-name"> <a class="link" href="#">Never Gonna Give You Up</a></h3>
-                  </div>
-                  <span class="list-track__author"><a class="link" href="#">Rick Astley</a></span>
-                  <time class="list-track__time">3:39</time>
-                </li>
-              </ul>
+              <h2 class="section__title-left">Треки</h2>
+              <ul class="list-track"></ul>
               <a class="link-more" href="#">More tracks ></a>
             </section>           
           </div>
@@ -256,7 +145,7 @@
               Don`t want to see ads? <a class="accordion__link" href="#">Upgrade Now</a>
             </p>         
           </aside>
-        </div>            
+        </div>         
       </div>   
     </main>
 
