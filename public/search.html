@@ -10,13 +10,10 @@
       content="Web site created using create-react-app"
     />
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <title>Music | Last.fm</title>
+    <script src="search.js" defer></script>
+    <title>Search | Last.fm</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-
     <header class="header">
 
       <audio class="audio">
@@ -62,71 +59,96 @@
           </ul>
         </div>
 
-        <a class="logo link" href="/public/index.html">
+        <a class="logo link" href="search.html">
           <img class="logo__img" src="img/logo.png" alt="Логотип">
         </a>
 
         <nav class="navigation">
           <ul class="navigation__link-wrapper">
-            <li class="navigation__item">
-              <button id="buttonSearchNav" class="navigation__button-search">
-                <svg class="navigation__button-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                </svg>
-              </button>
-            </li>
+            <li class="navigation__item"><button class="navigation__button-search">
+              <svg class="navigation__button-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+            </button></li>
             <li class="navigation__item"><a class="link navigation__link" href="#">Home</a></li>
             <li class="navigation__item"><a class="link navigation__link" href="#">Live</a></li>
             <li class="navigation__item"><a class="link navigation__link" href="#">Music</a></li>
             <li class="navigation__item"><a class="link navigation__link" href="#">Charts</a></li>
             <li class="navigation__item"><a class="link navigation__link" href="#">Events</a></li>
             <li class="navigation__item"><a class="link navigation__link" href="#">Features</a></li>        
-            <li class="navigation__item">
-              <a class="link navigation__user-link" href="#">
-                <svg class="navigation__user-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                </svg>
-              </a>
-            </li>
+            <li class="navigation__item"><a class="link navigation__user-link" href="#">
+              <svg class="navigation__user-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg>
+            </a></li>
         </ul>
         </nav>
-
+        
         <div class="header__burger">
           <span class="header__burger-center"></span>
-        </div>  
+        </div>    
       </div>
-
-      <form class="form-search" action="#" method="GET">
-        <input class="form-search__input" type="text" placeholder="Search for music...">
-        <button id="buttonCancel" class="form-search__button" type="button">
-          <svg class="form-search__button-img form-search__img-cancel" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-          </svg>
-        </button>
-        <button id="buttonSearch" class="form-search__button" type="submit">
-          <svg class="form-search__button-img form-search__img-search" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-          </svg>
-        </button>
-      </form>
     </header>
-  
+
     <main class="main">
       <div class="wrapper">
-        <h1 class="main__title title-center">Music</h1>
-        <section class="section">
-          <h2 class="section__title">Hot right now</h2>
-          <div class="section__hot-music"></div>
-        </section>
+        <div class="main__head">        
+          <h1 class="main__title title-left">Search results for</h1>
+          <ul class="main__nav">
+            <li class="main__nav-item"><a class="link main__nav-link main__nav-link_active" href="#">Top Results</a></li>
+            <li class="main__nav-item"><a class="link main__nav-link" href="#">Artists</a></li>
+            <li class="main__nav-item"><a class="link main__nav-link" href="#">Albums</a></li>
+            <li class="main__nav-item"><a class="link main__nav-link" href="#">Tracks</a></li>
+          </ul>       
+        </div>
+      </div>    
+      <div class="main__body">
+        <div class="main__boby-content">
+          <div class="main__content">
+            <form class="main__form" action="#" method="GET">
+              <input class="main__form-input" type="text" placeholder="never gonna give you up" value="" tabindex="1">
+              <button id="buttonCancel" class="main__form-button" type="button">
+                <svg class="main__form-button-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+              </button>
+              <span class="form__separator"></span>
+              <button class="main__form-button" type="submit">
+                <svg class="main__form-button-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+              </button>
+            </form>
+            <section class="section">
+              <h2 class="section__title-left">Artists</h2>
+              <div class="section__body"></div>
+              <a class="link-more" href="#">More artists ></a>
+            </section>
 
-        <section class="section">
-          <h2 class="section__title">Popular tracks</h2>
-          <div class="section__popular-music"></div>
-        </section>
-      </div>
+            <section class="section">
+              <h2 class="section__title-left">Альбомы</h2>
+              <div class="section__body"></div>
+              <a class="link-more" href="#">More albums ></a>
+            </section>
+
+            <section class="section">
+              <h2 class="section__title-left">Треки</h2>
+              <ul class="list-track"></ul>
+              <a class="link-more" href="#">More tracks ></a>
+            </section>           
+          </div>
+              
+          <aside class="accordion">         
+            <p class="accordion__text">
+              Don`t want to see ads? <a class="accordion__link" href="#">Upgrade Now</a>
+            </p>         
+          </aside>
+        </div>         
+      </div>   
     </main>
-    
+
     <footer class="footer">
       <div class="wrapper">
         <section class="footer__head">       
@@ -199,6 +221,6 @@
           </div>
         </div>         
       </section>         
-    </footer>   
+    </footer>
   </body>
 </html>
