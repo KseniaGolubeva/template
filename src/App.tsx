@@ -1,23 +1,20 @@
-import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header'
+import Music from './components/Music/Music';
+import Search from './components/Search/Search';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <p>
-//           Edit <code>src/App.tsx</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
+function App() {
+  return (
+    <>
+      <Header />
+      <Routes>
+        <Route index element={<Music />} />
+        <Route path="search/:nameTrack" element={<Search />} />
+      </Routes>
+      <Footer />
+    </>
+  );
+}
 
-// export default App;
+export default App;

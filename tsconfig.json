@@ -17,12 +17,10 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    // "noEmit": true,
-    "jsx": "react-jsx",
-    "outDir": "./public"
+    "noEmit": true,
+    "jsx": "react-jsx"
   },
-  "files": [
-    "src/search.ts",
-    "src/script.ts"
+  "include": [
+    "src"
   ]
 }
